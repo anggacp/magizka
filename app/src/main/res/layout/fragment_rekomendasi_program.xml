@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#DDEEDF"
+    android:paddingBottom="60dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title_rekomendasi_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Rekomendasi Program"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_underweight1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_rekomendasi_program"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="Program Balita Underweight"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_stunting1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_underweight1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita \nStunting"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_wasting1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_stunting1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita \nWasting"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_remaja_putri_anemia"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_wasting1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Remaja\n Putri Anemia"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ibu_hamil_anemia"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_remaja_putri_anemia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Ibu\n Hamil Anemia"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ibu_hamil_resiko_KEK"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_ibu_hamil_anemia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Ibu Hamil Resiko KEK"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bayi_dengan_berat_badan_lahir_rendah"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_ibu_hamil_resiko_KEK"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Bayi dengan Berat Badan Lahir Rendah"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bayi_usia_kurang_6_bulan_dapat_ASI"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_bayi_dengan_berat_badan_lahir_rendah"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Bayi Usia Kurang dari 6 Bulan dapat ASI Eksklusif"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bayi_usia_6_bulan_dapat_ASI"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_bayi_usia_kurang_6_bulan_dapat_ASI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Bayi Usia 6 Bulan dapat ASI Eksklusif"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ibu_hamil_mendapat_TTD"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_bayi_usia_6_bulan_dapat_ASI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Ibu Hamil Mendapat TTD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ibu_hamil_KEK_dapat_makanan_tambahan"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_ibu_hamil_mendapat_TTD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Ibu Hamil KEK Mendapat Makanan Tambahan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_kurus_dapat_makanan_tambahan"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_ibu_hamil_KEK_dapat_makanan_tambahan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita Kurus Mendapat Makanan Tambahan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_remaja_putri_dapat_TTD"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_kurus_dapat_makanan_tambahan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Remaja Putri Mendapat TTD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bayi_mendapat_IMD"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_remaja_putri_dapat_TTD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Bayi Baru Lahir Mendapat Inisiasi Menyusui Dini"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_yang_ditimbang_beratnya"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_bayi_mendapat_IMD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita yang Ditimbang Berat Badannya"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_punya_KIA_atau_KMS"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_yang_ditimbang_beratnya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita Mempunyai Buku KIA atau KMS"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_ditimbang_yang_naik_berat_badannya"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_punya_KIA_atau_KMS"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita Ditimbang yang Naik Berat Badannya"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_mendapat_kapsul_vitamin_A"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_ditimbang_yang_naik_berat_badannya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Balita 6-59 Bulan Mendapat Kapsul Vitamin A"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rumah_tangga_mengonsumsi_garam_beriodium"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_balita_mendapat_kapsul_vitamin_A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Rumah Tangga Mengonsumsi Garam beriodium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_balita_gizi_buruk_mendapat_perawatan"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_rumah_tangga_mengonsumsi_garam_beriodium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Program Kasus Balita Gizi Buruk yang Mendapatkan Perawatan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#F2F9F1"
+        app:cornerRadius="25dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

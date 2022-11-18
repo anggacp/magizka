@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"
+    >
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.magizka.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"
+
+        >
+        <action
+            android:id="@+id/action_navigation_home_to_inputDataFragment"
+            app:destination="@id/inputDataFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="com.example.magizka.ui.information.InformationFragment"
+        android:label="Information"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_navigation_information_to_information_1_fragment"
+            app:destination="@id/information_1_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_2_fragment"
+            app:destination="@id/information_2_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_3_fragment"
+            app:destination="@id/information_3_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_4_fragment"
+            app:destination="@id/information_4_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_5_fragment"
+            app:destination="@id/information_5_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_6_fragment"
+            app:destination="@id/information_6_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_7_fragment"
+            app:destination="@id/information_7_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_8_fragment"
+            app:destination="@id/information_8_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_9_fragment"
+            app:destination="@id/information_9_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_10_fragment"
+            app:destination="@id/information_10_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_11_fragment"
+            app:destination="@id/information_11_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_12_fragment"
+            app:destination="@id/information_12_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_13_fragment"
+            app:destination="@id/information_13_fragment" />
+        <action
+            android:id="@+id/action_navigation_information_to_information_14_fragment"
+            app:destination="@id/information_14_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputDataFragment"
+        android:name="com.example.magizka.ui.input_data.InputDataFragment"
+        android:label="InputDataFragment" >
+        <action
+            android:id="@+id/action_inputDataFragment_to_rekomendasiProgramFragment"
+            app:destination="@id/rekomendasiProgramFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiProgramFragment"
+        android:name="com.example.magizka.ui.program_recommend.RekomendasiProgramFragment"
+        android:label="RekomendasiProgramFragment" >
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasi01BalitaUnderweightFragment"
+            app:destination="@id/rekomendasi01BalitaUnderweightFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasi01BalitaStuntingFragment"
+            app:destination="@id/rekomendasi01BalitaStuntingFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasi01BalitaWastingFragment"
+            app:destination="@id/rekomendasi01BalitaWastingFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBalitaBeratNaikFragment"
+            app:destination="@id/rekomendasiBalitaBeratNaikFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBalitaDitimbangFragment"
+            app:destination="@id/rekomendasiBalitaDitimbangFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBalitaGiziBurukFragment"
+            app:destination="@id/rekomendasiBalitaGiziBurukFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBalitaKIAFragment"
+            app:destination="@id/rekomendasiBalitaKIAFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBalitaKurusMakananFragment"
+            app:destination="@id/rekomendasiBalitaKurusMakananFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBalitaVitaminFragment"
+            app:destination="@id/rekomendasiBalitaVitaminFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBayiBeratRendahFragment"
+            app:destination="@id/rekomendasiBayiBeratRendahFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBayiDapatASIFragment"
+            app:destination="@id/rekomendasiBayiDapatASIFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBayiIMDFragment"
+            app:destination="@id/rekomendasiBayiIMDFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBayiKurangASIFragment"
+            app:destination="@id/rekomendasiBayiKurangASIFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBumilAnemiaFragment"
+            app:destination="@id/rekomendasiBumilAnemiaFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBumilKEKFragment"
+            app:destination="@id/rekomendasiBumilKEKFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBumilKEKMakananFragment"
+            app:destination="@id/rekomendasiBumilKEKMakananFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiRumahTanggaGaramFragment"
+            app:destination="@id/rekomendasiRumahTanggaGaramFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiRemajaTTDFragment"
+            app:destination="@id/rekomendasiRemajaTTDFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiRemajaPutriAnemiaFragment"
+            app:destination="@id/rekomendasiRemajaPutriAnemiaFragment" />
+        <action
+            android:id="@+id/action_rekomendasiProgramFragment_to_rekomendasiBumilTTDFragment"
+            app:destination="@id/rekomendasiBumilTTDFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProgramFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramUnderweight_PMTFragment"
+        android:label="DetailProgramFragment" />
+    <fragment
+        android:id="@+id/rekomendasi01BalitaUnderweightFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.Rekomendasi01BalitaUnderweightFragment"
+        android:label="Rekomendasi01BalitaUnderweightFragment" >
+        <action
+            android:id="@+id/action_rekomendasi01BalitaUnderweightFragment_to_detailProgramFragment"
+            app:destination="@id/detailProgramFragment" />
+        <action
+            android:id="@+id/action_rekomendasi01BalitaUnderweightFragment_to_detailProgramUnderweight_PMBAFragment"
+            app:destination="@id/detailProgramUnderweight_PMBAFragment" />
+        <action
+            android:id="@+id/action_rekomendasi01BalitaUnderweightFragment_to_detailProgramUnderweight_EdukasiFragment"
+            app:destination="@id/detailProgramUnderweight_EdukasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/information_1_fragment"
+        android:name="com.example.magizka.ui.information.information_1_fragment"
+        android:label="information_1_fragment" />
+    <fragment
+        android:id="@+id/information_2_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_2_fragment"
+        android:label="information_2_fragment" />
+    <fragment
+        android:id="@+id/information_3_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_3_fragment"
+        android:label="information_3_fragment" />
+    <fragment
+        android:id="@+id/information_4_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_4_fragment"
+        android:label="information_4_fragment" />
+    <fragment
+        android:id="@+id/information_5_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_5_fragment"
+        android:label="information_5_fragment" />
+    <fragment
+        android:id="@+id/information_6_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_6_fragment"
+        android:label="information_6_fragment" />
+    <fragment
+        android:id="@+id/information_7_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_7_fragment"
+        android:label="information_7_fragment" />
+    <fragment
+        android:id="@+id/information_8_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_8_fragment"
+        android:label="information_8_fragment" />
+    <fragment
+        android:id="@+id/information_9_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_9_fragment"
+        android:label="information_9_fragment" />
+    <fragment
+        android:id="@+id/information_10_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_10_fragment"
+        android:label="information_10_fragment" />
+    <fragment
+        android:id="@+id/information_11_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_11_fragment"
+        android:label="information_11_fragment" />
+    <fragment
+        android:id="@+id/information_12_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_12_fragment"
+        android:label="information_12_fragment" />
+    <fragment
+        android:id="@+id/information_13_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_13_fragment"
+        android:label="information_13_fragment" />
+    <fragment
+        android:id="@+id/information_14_fragment"
+        android:name="com.example.magizka.ui.information.information_detail.information_14_fragment"
+        android:label="information_14_fragment" />
+    <fragment
+        android:id="@+id/detailProgramUnderweight_PMBAFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramUnderweight_PMBAFragment"
+        android:label="DetailProgramUnderweight_PMBAFragment" />
+    <fragment
+        android:id="@+id/detailProgramUnderweight_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramUnderweight_EdukasiFragment"
+        android:label="DetailProgramUnderweight_EdukasiFragment" />
+    <fragment
+        android:id="@+id/rekomendasi01BalitaStuntingFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.Rekomendasi01BalitaStuntingFragment"
+        android:label="Rekomendasi01BalitaStuntingFragment" >
+        <action
+            android:id="@+id/action_rekomendasi01BalitaStuntingFragment_to_detailProgramStunting_EdukasiFragment"
+            app:destination="@id/detailProgramStunting_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasi01BalitaStuntingFragment_to_detailProgramStunting_PMBAFragment"
+            app:destination="@id/detailProgramStunting_PMBAFragment" />
+        <action
+            android:id="@+id/action_rekomendasi01BalitaStuntingFragment_to_detailProgramStunting_PMTFragment"
+            app:destination="@id/detailProgramStunting_PMTFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasi01BalitaWastingFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.Rekomendasi01BalitaWastingFragment"
+        android:label="Rekomendasi01BalitaWastingFragment" >
+        <action
+            android:id="@+id/action_rekomendasi01BalitaWastingFragment_to_detailProgramWasting_PMTFragment"
+            app:destination="@id/detailProgramWasting_PMTFragment" />
+        <action
+            android:id="@+id/action_rekomendasi01BalitaWastingFragment_to_detailProgramWasting_PMBAFragment"
+            app:destination="@id/detailProgramWasting_PMBAFragment" />
+        <action
+            android:id="@+id/action_rekomendasi01BalitaWastingFragment_to_detailProgramWasting_EdukasiFragment"
+            app:destination="@id/detailProgramWasting_EdukasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBalitaBeratNaikFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBalitaBeratNaikFragment"
+        android:label="RekomendasiBalitaBeratNaikFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBalitaBeratNaikFragment_to_detailProgramBalitaNaikBeratnya_PMTFragment"
+            app:destination="@id/detailProgramBalitaNaikBeratnya_PMTFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaBeratNaikFragment_to_detailProgramBalitaNaikBeratnya_EdukasiFragment"
+            app:destination="@id/detailProgramBalitaNaikBeratnya_EdukasiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBalitaDitimbangFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBalitaDitimbangFragment"
+        android:label="RekomendasiBalitaDitimbangFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBalitaDitimbangFragment_to_detailProgramBalitaDitimbang_KunjunganFragment"
+            app:destination="@id/detailProgramBalitaDitimbang_KunjunganFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaDitimbangFragment_to_detailProgramBalitaDitimbang_PendataanFragment"
+            app:destination="@id/detailProgramBalitaDitimbang_PendataanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaDitimbangFragment_to_detailProgramBalitaDitimbang_PosyanduFragment"
+            app:destination="@id/detailProgramBalitaDitimbang_PosyanduFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBalitaGiziBurukFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBalitaGiziBurukFragment"
+        android:label="RekomendasiBalitaGiziBurukFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBalitaGiziBurukFragment_to_detailProgramBalitaGiziBuruk_KunjunganFragment"
+            app:destination="@id/detailProgramBalitaGiziBuruk_KunjunganFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaGiziBurukFragment_to_detailProgramBalitaGiziBuruk_PendataanFragment"
+            app:destination="@id/detailProgramBalitaGiziBuruk_PendataanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaGiziBurukFragment_to_detailProgramBalitaGiziBuruk_PosyanduFragment"
+            app:destination="@id/detailProgramBalitaGiziBuruk_PosyanduFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBalitaKIAFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBalitaKIAFragment"
+        android:label="RekomendasiBalitaKIAFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBalitaKIAFragment_to_detailProgramBalitaKIA_PosyanduFragment"
+            app:destination="@id/detailProgramBalitaKIA_PosyanduFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaKIAFragment_to_detailProgramBalitaKIA_KunjunganFragment"
+            app:destination="@id/detailProgramBalitaKIA_KunjunganFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaKIAFragment_to_detailProgramBalitaKIA_PendataanFragment"
+            app:destination="@id/detailProgramBalitaKIA_PendataanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBalitaKurusMakananFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBalitaKurusMakananFragment"
+        android:label="RekomendasiBalitaKurusMakananFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBalitaKurusMakananFragment_to_detailProgramBalitaKurusMakanan_KunjunganFragment"
+            app:destination="@id/detailProgramBalitaKurusMakanan_KunjunganFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaKurusMakananFragment_to_detailProgramBalitaKurusMakanan_PeningkatanFragment"
+            app:destination="@id/detailProgramBalitaKurusMakanan_PeningkatanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaKurusMakananFragment_to_detailProgramBalitaKurusMakanan_PosyanduFragment"
+            app:destination="@id/detailProgramBalitaKurusMakanan_PosyanduFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBalitaVitaminFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBalitaVitaminFragment"
+        android:label="RekomendasiBalitaVitaminFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBalitaVitaminFragment_to_detailProgramBalitaVitamin_KunjunganFragment"
+            app:destination="@id/detailProgramBalitaVitamin_KunjunganFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBalitaVitaminFragment_to_detailProgramBalitaVitamin_PosyanduFragment"
+            app:destination="@id/detailProgramBalitaVitamin_PosyanduFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBayiBeratRendahFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBayiBeratRendahFragment"
+        android:label="RekomendasiBayiBeratRendahFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBayiBeratRendahFragment_to_detailProgramBayiBeratRendah_ANCFragment"
+            app:destination="@id/detailProgramBayiBeratRendah_ANCFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiBeratRendahFragment_to_detailProgramBayiBeratRendah_EdukasiFragment"
+            app:destination="@id/detailProgramBayiBeratRendah_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiBeratRendahFragment_to_detailProgramBayiBeratRendah_KelasFragment"
+            app:destination="@id/detailProgramBayiBeratRendah_KelasFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiBeratRendahFragment_to_detailProgramBayiBeratRendah_PMTFragment"
+            app:destination="@id/detailProgramBayiBeratRendah_PMTFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBayiDapatASIFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBayiDapatASIFragment"
+        android:label="RekomendasiBayiDapatASIFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBayiDapatASIFragment_to_detailProgramBayiDapatASI_EdukasiASIFragment"
+            app:destination="@id/detailProgramBayiDapatASI_EdukasiASIFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiDapatASIFragment_to_detailProgramBayiDapatASI_EdukasiKeluargaFragment"
+            app:destination="@id/detailProgramBayiDapatASI_EdukasiKeluargaFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiDapatASIFragment_to_detailProgramBayiDapatASI_KelasFragment"
+            app:destination="@id/detailProgramBayiDapatASI_KelasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBayiIMDFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBayiIMDFragment"
+        android:label="RekomendasiBayiIMDFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBayiIMDFragment_to_detailProgramBayiIMD_ANCFragment"
+            app:destination="@id/detailProgramBayiIMD_ANCFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiIMDFragment_to_detailProgramBayiIMD_EdukasiFragment"
+            app:destination="@id/detailProgramBayiIMD_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiIMDFragment_to_detailProgramBayiIMD_KelasFragment"
+            app:destination="@id/detailProgramBayiIMD_KelasFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiIMDFragment_to_detailProgramBayiIMD_PersalinanFragment"
+            app:destination="@id/detailProgramBayiIMD_PersalinanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBayiKurangASIFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBayiKurangASIFragment"
+        android:label="RekomendasiBayiKurangASIFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBayiKurangASIFragment_to_detailProgramBayiKurangAsi_EdukasiKeluargaFragment"
+            app:destination="@id/detailProgramBayiKurangAsi_EdukasiKeluargaFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiKurangASIFragment_to_detailProgramBayiKurangAsi_KelasFragment"
+            app:destination="@id/detailProgramBayiKurangAsi_KelasFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBayiKurangASIFragment_to_detailProgramBayiKurangAsi_EdukasiASIFragment"
+            app:destination="@id/detailProgramBayiKurangAsi_EdukasiASIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBumilAnemiaFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBumilAnemiaFragment"
+        android:label="RekomendasiBumilAnemiaFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBumilAnemiaFragment_to_detailProgramBumilAnemia_ANCFragment"
+            app:destination="@id/detailProgramBumilAnemia_ANCFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilAnemiaFragment_to_detailProgramBumilAnemia_EdukasiFragment"
+            app:destination="@id/detailProgramBumilAnemia_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilAnemiaFragment_to_detailProgramBumilAnemia_KelasFragment"
+            app:destination="@id/detailProgramBumilAnemia_KelasFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilAnemiaFragment_to_detailProgramBumilAnemia_KepatuhanFragment"
+            app:destination="@id/detailProgramBumilAnemia_KepatuhanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilAnemiaFragment_to_detailProgramBumilAnemia_TabletFragment"
+            app:destination="@id/detailProgramBumilAnemia_TabletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBumilKEKFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBumilKEKFragment"
+        android:label="RekomendasiBumilKEKFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKFragment_to_detailProgramBumilKEK_ANCFragment"
+            app:destination="@id/detailProgramBumilKEK_ANCFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKFragment_to_detailProgramBumilKEK_EdukasiFragment"
+            app:destination="@id/detailProgramBumilKEK_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKFragment_to_detailProgramBumilKEK_KelasFragment"
+            app:destination="@id/detailProgramBumilKEK_KelasFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKFragment_to_detailProgramBumilKEK_PMTFragment"
+            app:destination="@id/detailProgramBumilKEK_PMTFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBumilKEKMakananFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBumilKEKMakananFragment"
+        android:label="RekomendasiBumilKEKMakananFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKMakananFragment_to_detailProgramBumilKEKMakanan_ANCFragment"
+            app:destination="@id/detailProgramBumilKEKMakanan_ANCFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKMakananFragment_to_detailProgramBumilKEKMakanan_DistribusiFragment"
+            app:destination="@id/detailProgramBumilKEKMakanan_DistribusiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilKEKMakananFragment_to_detailProgramBumilKEKMakanan_KunjunganFragment"
+            app:destination="@id/detailProgramBumilKEKMakanan_KunjunganFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiBumilTTDFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiBumilTTDFragment"
+        android:label="RekomendasiBumilTTDFragment" >
+        <action
+            android:id="@+id/action_rekomendasiBumilTTDFragment_to_detailProgramBumilTTD_DistribusiFragment"
+            app:destination="@id/detailProgramBumilTTD_DistribusiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilTTDFragment_to_detailProgramBumilTTD_PemantauanFragment"
+            app:destination="@id/detailProgramBumilTTD_PemantauanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiBumilTTDFragment_to_detailProgramBumilTTD_PeningkatanFragment"
+            app:destination="@id/detailProgramBumilTTD_PeningkatanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiRemajaPutriAnemiaFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiRemajaPutriAnemiaFragment"
+        android:label="RekomendasiRemajaPutriAnemiaFragment" >
+        <action
+            android:id="@+id/action_rekomendasiRemajaPutriAnemiaFragment_to_detailProgramRemajaAnemia_PemantauanFragment"
+            app:destination="@id/detailProgramRemajaAnemia_PemantauanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRemajaPutriAnemiaFragment_to_detailProgramRemajaAnemia_EdukasiFragment"
+            app:destination="@id/detailProgramRemajaAnemia_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRemajaPutriAnemiaFragment_to_detailProgramRemajaAnemia_KonselorFragment"
+            app:destination="@id/detailProgramRemajaAnemia_KonselorFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRemajaPutriAnemiaFragment_to_detailProgramRemajaAnemia_PenyediaanFragment"
+            app:destination="@id/detailProgramRemajaAnemia_PenyediaanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRemajaPutriAnemiaFragment_to_detailProgramRemajaAnemia_TabletFragment"
+            app:destination="@id/detailProgramRemajaAnemia_TabletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiRemajaTTDFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiRemajaTTDFragment"
+        android:label="RekomendasiRemajaTTDFragment" >
+        <action
+            android:id="@+id/action_rekomendasiRemajaTTDFragment_to_detailProgramRemajaTTD_PembentukanFragment"
+            app:destination="@id/detailProgramRemajaTTD_PembentukanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRemajaTTDFragment_to_detailProgramRemajaTTD_PeningkatanFragment"
+            app:destination="@id/detailProgramRemajaTTD_PeningkatanFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRemajaTTDFragment_to_detailProgramRemajaTTD_PenyediaanFragment"
+            app:destination="@id/detailProgramRemajaTTD_PenyediaanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rekomendasiRumahTanggaGaramFragment"
+        android:name="com.example.magizka.ui.sub_rekomendasi.RekomendasiRumahTanggaGaramFragment"
+        android:label="RekomendasiRumahTanggaGaramFragment" >
+        <action
+            android:id="@+id/action_rekomendasiRumahTanggaGaramFragment_to_detailProgramRumahTanggaGaram_SurveyFragment"
+            app:destination="@id/detailProgramRumahTanggaGaram_SurveyFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRumahTanggaGaramFragment_to_detailProgramRumahTanggaGaram_EdukasiFragment"
+            app:destination="@id/detailProgramRumahTanggaGaram_EdukasiFragment" />
+        <action
+            android:id="@+id/action_rekomendasiRumahTanggaGaramFragment_to_detailProgramRumahTanggaGaram_PeningkatanFragment"
+            app:destination="@id/detailProgramRumahTanggaGaram_PeningkatanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProgramStunting_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramStunting_EdukasiFragment"
+        android:label="DetailProgramStunting_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramStunting_PMBAFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramStunting_PMBAFragment"
+        android:label="DetailProgramStunting_PMBAFragment" />
+    <fragment
+        android:id="@+id/detailProgramStunting_PMTFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramStunting_PMTFragment"
+        android:label="DetailProgramStunting_PMTFragment" />
+    <fragment
+        android:id="@+id/detailProgramWasting_PMTFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramWasting_PMTFragment"
+        android:label="DetailProgramWasting_PMTFragment" />
+    <fragment
+        android:id="@+id/detailProgramWasting_PMBAFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramWasting_PMBAFragment"
+        android:label="DetailProgramWasting_PMBAFragment" />
+    <fragment
+        android:id="@+id/detailProgramWasting_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramWasting_EdukasiFragment"
+        android:label="DetailProgramWasting_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaAnemia_PemantauanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaAnemia_PemantauanFragment"
+        android:label="DetailProgramRemajaAnemia_PemantauanFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaAnemia_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaAnemia_EdukasiFragment"
+        android:label="DetailProgramRemajaAnemia_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaAnemia_KonselorFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaAnemia_KonselorFragment"
+        android:label="DetailProgramRemajaAnemia_KonselorFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaAnemia_PenyediaanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaAnemia_PenyediaanFragment"
+        android:label="DetailProgramRemajaAnemia_PenyediaanFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaAnemia_TabletFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaAnemia_TabletFragment"
+        android:label="DetailProgramRemajaAnemia_TabletFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilAnemia_ANCFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilAnemia_ANCFragment"
+        android:label="DetailProgramBumilAnemia_ANCFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilAnemia_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilAnemia_EdukasiFragment"
+        android:label="DetailProgramBumilAnemia_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilAnemia_KelasFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilAnemia_KelasFragment"
+        android:label="DetailProgramBumilAnemia_KelasFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilAnemia_KepatuhanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilAnemia_KepatuhanFragment"
+        android:label="DetailProgramBumilAnemia_KepatuhanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilAnemia_TabletFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilAnemia_TabletFragment"
+        android:label="DetailProgramBumilAnemia_TabletFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEK_ANCFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEK_ANCFragment"
+        android:label="DetailProgramBumilKEK_ANCFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEK_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEK_EdukasiFragment"
+        android:label="DetailProgramBumilKEK_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEK_KelasFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEK_KelasFragment"
+        android:label="DetailProgramBumilKEK_KelasFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEK_PMTFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEK_PMTFragment"
+        android:label="DetailProgramBumilKEK_PMTFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiBeratRendah_ANCFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiBeratRendah_ANCFragment"
+        android:label="DetailProgramBayiBeratRendah_ANCFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiBeratRendah_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiBeratRendah_EdukasiFragment"
+        android:label="DetailProgramBayiBeratRendah_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiBeratRendah_KelasFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiBeratRendah_KelasFragment"
+        android:label="DetailProgramBayiBeratRendah_KelasFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiBeratRendah_PMTFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiBeratRendah_PMTFragment"
+        android:label="DetailProgramBayiBeratRendah_PMTFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiKurangAsi_EdukasiASIFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiKurangAsi_EdukasiASIFragment"
+        android:label="DetailProgramBayiKurangAsi_EdukasiASIFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiKurangAsi_EdukasiKeluargaFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiKurangAsi_EdukasiKeluargaFragment"
+        android:label="DetailProgramBayiKurangAsi_EdukasiKeluargaFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiKurangAsi_KelasFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiKurangAsi_KelasFragment"
+        android:label="DetailProgramBayiKurangAsi_KelasFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiDapatASI_EdukasiASIFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiDapatASI_EdukasiASIFragment"
+        android:label="DetailProgramBayiDapatASI_EdukasiASIFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiDapatASI_EdukasiKeluargaFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiDapatASI_EdukasiKeluargaFragment"
+        android:label="DetailProgramBayiDapatASI_EdukasiKeluargaFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiDapatASI_KelasFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiDapatASI_KelasFragment"
+        android:label="DetailProgramBayiDapatASI_KelasFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilTTD_DistribusiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilTTD_DistribusiFragment"
+        android:label="DetailProgramBumilTTD_DistribusiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilTTD_PemantauanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilTTD_PemantauanFragment"
+        android:label="DetailProgramBumilTTD_PemantauanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilTTD_PeningkatanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilTTD_PeningkatanFragment"
+        android:label="DetailProgramBumilTTD_PeningkatanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEKMakanan_ANCFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEKMakanan_ANCFragment"
+        android:label="DetailProgramBumilKEKMakanan_ANCFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEKMakanan_DistribusiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEKMakanan_DistribusiFragment"
+        android:label="DetailProgramBumilKEKMakanan_DistribusiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBumilKEKMakanan_KunjunganFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBumilKEKMakanan_KunjunganFragment"
+        android:label="DetailProgramBumilKEKMakanan_KunjunganFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaKurusMakanan_KunjunganFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaKurusMakanan_KunjunganFragment"
+        android:label="DetailProgramBalitaKurusMakanan_KunjunganFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaKurusMakanan_PeningkatanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaKurusMakanan_PeningkatanFragment"
+        android:label="DetailProgramBalitaKurusMakanan_PeningkatanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaKurusMakanan_PosyanduFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaKurusMakanan_PosyanduFragment"
+        android:label="DetailProgramBalitaKurusMakanan_PosyanduFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaTTD_PembentukanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaTTD_PembentukanFragment"
+        android:label="DetailProgramRemajaTTD_PembentukanFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaTTD_PeningkatanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaTTD_PeningkatanFragment"
+        android:label="DetailProgramRemajaTTD_PeningkatanFragment" />
+    <fragment
+        android:id="@+id/detailProgramRemajaTTD_PenyediaanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRemajaTTD_PenyediaanFragment"
+        android:label="DetailProgramRemajaTTD_PenyediaanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiIMD_ANCFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiIMD_ANCFragment"
+        android:label="DetailProgramBayiIMD_ANCFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiIMD_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiIMD_EdukasiFragment"
+        android:label="DetailProgramBayiIMD_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiIMD_KelasFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiIMD_KelasFragment"
+        android:label="DetailProgramBayiIMD_KelasFragment" />
+    <fragment
+        android:id="@+id/detailProgramBayiIMD_PersalinanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBayiIMD_PersalinanFragment"
+        android:label="DetailProgramBayiIMD_PersalinanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaDitimbang_KunjunganFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaDitimbang_KunjunganFragment"
+        android:label="DetailProgramBalitaDitimbang_KunjunganFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaDitimbang_PendataanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaDitimbang_PendataanFragment"
+        android:label="DetailProgramBalitaDitimbang_PendataanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaDitimbang_PosyanduFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaDitimbang_PosyanduFragment"
+        android:label="DetailProgramBalitaDitimbang_PosyanduFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaKIA_KunjunganFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaKIA_KunjunganFragment"
+        android:label="DetailProgramBalitaKIA_KunjunganFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaKIA_PendataanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaKIA_PendataanFragment"
+        android:label="DetailProgramBalitaKIA_PendataanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaKIA_PosyanduFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaKIA_PosyanduFragment"
+        android:label="DetailProgramBalitaKIA_PosyanduFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaNaikBeratnya_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaNaikBeratnya_EdukasiFragment"
+        android:label="DetailProgramBalitaNaikBeratnya_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaNaikBeratnya_PMTFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaNaikBeratnya_PMTFragment"
+        android:label="DetailProgramBalitaNaikBeratnya_PMTFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaVitamin_KunjunganFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaVitamin_KunjunganFragment"
+        android:label="DetailProgramBalitaVitamin_KunjunganFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaVitamin_PosyanduFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaVitamin_PosyanduFragment"
+        android:label="DetailProgramBalitaVitamin_PosyanduFragment" />
+    <fragment
+        android:id="@+id/detailProgramRumahTanggaGaram_EdukasiFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRumahTanggaGaram_EdukasiFragment"
+        android:label="DetailProgramRumahTanggaGaram_EdukasiFragment" />
+    <fragment
+        android:id="@+id/detailProgramRumahTanggaGaram_PeningkatanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRumahTanggaGaram_PeningkatanFragment"
+        android:label="DetailProgramRumahTanggaGaram_PeningkatanFragment" />
+    <fragment
+        android:id="@+id/detailProgramRumahTanggaGaram_SurveyFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramRumahTanggaGaram_SurveyFragment"
+        android:label="DetailProgramRumahTanggaGaram_SurveyFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaGiziBuruk_KunjunganFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaGiziBuruk_KunjunganFragment"
+        android:label="DetailProgramBalitaGiziBuruk_KunjunganFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaGiziBuruk_PendataanFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaGiziBuruk_PendataanFragment"
+        android:label="DetailProgramBalitaGiziBuruk_PendataanFragment" />
+    <fragment
+        android:id="@+id/detailProgramBalitaGiziBuruk_PosyanduFragment"
+        android:name="com.example.magizka.ui.program_recommend.DetailProgramBalitaGiziBuruk_PosyanduFragment"
+        android:label="DetailProgramBalitaGiziBuruk_PosyanduFragment" />
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.example.magizka.ui.information.ReminderFragment"
+        android:label="ReminderFragment" >
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi1Fragment"
+            app:destination="@id/aksi1Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi2Fragment"
+            app:destination="@id/aksi2Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi3Fragment"
+            app:destination="@id/aksi3Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi4Fragment"
+            app:destination="@id/aksi4Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi5Fragment"
+            app:destination="@id/aksi5Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi6Fragment"
+            app:destination="@id/aksi6Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi7Fragment"
+            app:destination="@id/aksi7Fragment" />
+        <action
+            android:id="@+id/action_reminderFragment_to_aksi8Fragment"
+            app:destination="@id/aksi8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aksi1Fragment"
+        android:name="com.example.magizka.ui.reminder.Aksi1Fragment"
+        android:label="Aksi1Fragment" />
+    <fragment
+        android:id="@+id/aksi2Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi2Fragment"
+        android:label="Aksi2Fragment" />
+    <fragment
+        android:id="@+id/aksi3Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi3Fragment"
+        android:label="Aksi3Fragment" />
+    <fragment
+        android:id="@+id/aksi4Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi4Fragment"
+        android:label="Aksi4Fragment" />
+    <fragment
+        android:id="@+id/aksi5Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi5Fragment"
+        android:label="Aksi5Fragment" />
+    <fragment
+        android:id="@+id/aksi6Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi6Fragment"
+        android:label="Aksi6Fragment" />
+    <fragment
+        android:id="@+id/aksi7Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi7Fragment"
+        android:label="Aksi7Fragment" />
+    <fragment
+        android:id="@+id/aksi8Fragment"
+        android:name="com.example.magizka.ui.reminder.aksi.Aksi8Fragment"
+        android:label="Aksi8Fragment" />
+</navigation>

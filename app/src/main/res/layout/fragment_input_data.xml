@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#DDEEDF"
+    android:paddingBottom="60dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title_input_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Masukkan Data Anda"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle_rekomendasi_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_input_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Masukan dalam skala persen (1-100)"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_underweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_rekomendasi_program"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Balita Underweight"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_underweight"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_underweight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_stunting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_underweight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Balita Stunting"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_stunting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_stunting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_wasting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_stunting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Balita Wasting"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_wasting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_wasting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_remaja_putri_anemia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_wasting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Remaja Putri Anemia"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_remaja_putri_anemia"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_remaja_putri_anemia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_ibu_hamil_anemia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_remaja_putri_anemia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Ibu Hamil Anemia"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_ibu_hamil_anemia"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_ibu_hamil_anemia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_ibu_hamil_risiko_KEK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_ibu_hamil_anemia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Ibu Hamil Risiko KEK"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_ibu_hamil_risiko_KEK"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_ibu_hamil_risiko_KEK"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_bayi_dengan_berat_badan_lahir_rendah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_ibu_hamil_risiko_KEK"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presentase Bayi dengan Berat Badan Lahir Rendah"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_bayi_dengan_berat_badan_lahir_rendah"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_bayi_dengan_berat_badan_lahir_rendah"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_cakupan_bayi_usia_kurang_dari_6_bulan_mendapatkan_ASI_eksklusif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_bayi_dengan_berat_badan_lahir_rendah"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Bayi Usia kurang dari 6 Bulan Mendapatkan ASI Eksklusif"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_cakupan_bayi_usia_kurang_dari_6_bulan_mendapatkan_ASI_eksklusif"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_cakupan_bayi_usia_kurang_dari_6_bulan_mendapatkan_ASI_eksklusif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_cakupan_bayi_usia_6_bulan_mendapatkan_ASI_eksklusif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_cakupan_bayi_usia_kurang_dari_6_bulan_mendapatkan_ASI_eksklusif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Bayi Usia 6 Bulan Mendapatkan ASI Eksklusif"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_cakupan_bayi_usia_6_bulan_mendapatkan_ASI_eksklusif"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_cakupan_bayi_usia_6_bulan_mendapatkan_ASI_eksklusif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_ibu_hamil_mendapatkan_TTD_minimal_90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_cakupan_bayi_usia_6_bulan_mendapatkan_ASI_eksklusif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Ibu Hamil Mendapatkan TTD Minimal 90 Tablet selama Kehamilan"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_ibu_hamil_mendapatkan_TTD_minimal_90"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_ibu_hamil_mendapatkan_TTD_minimal_90"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_ibu_hamil_KEK_mendapat_makanan_tambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_ibu_hamil_mendapatkan_TTD_minimal_90"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Ibu Hamil KEK yang Mendapatkan Makanan Tambahan"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_ibu_hamil_KEK_mendapat_makanan_tambahan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_ibu_hamil_KEK_mendapat_makanan_tambahan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_kurus_mendapatkan_makanan_tambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_ibu_hamil_KEK_mendapat_makanan_tambahan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Balita Kurus yang Mendapatkan Makanan Tambahan"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_kurus_mendapatkan_makanan_tambahan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_kurus_mendapatkan_makanan_tambahan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+        <TextView
+        android:id="@+id/tv_subtitle_remaja_putri_Mendapat_TTD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_kurus_mendapatkan_makanan_tambahan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan remaja putri Mendapat TTD"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_remaja_putri_Mendapat_TTD"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_remaja_putri_Mendapat_TTD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_bayi_baru_lahir_mendapat_Inisiasi_Menyusui_Dini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_remaja_putri_Mendapat_TTD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan bayi baru lahir mendapat Inisiasi Menyusui Dini"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_bayi_baru_lahir_mendapat_Inisiasi_Menyusui_Dini"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_bayi_baru_lahir_mendapat_Inisiasi_Menyusui_Dini"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_yang_ditimbang_berat_badannya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_bayi_baru_lahir_mendapat_Inisiasi_Menyusui_Dini"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Balita yang Ditimbang Berat Badannya"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_yang_ditimbang_berat_badannya"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_yang_ditimbang_berat_badannya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_mempunyai_buku_KIA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_yang_ditimbang_berat_badannya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Balita Mempunyai Buku Kesehatan Ibu dan Anak (KIA)/ Kartu Menuju Sehat (KMS)"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_mempunyai_buku_KIA"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_mempunyai_buku_KIA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_ditimbang_naik_berat_badannya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_mempunyai_buku_KIA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Balita ditimbang yang Naik Berat Badannya"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_ditimbang_naik_berat_badannya"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_ditimbang_naik_berat_badannya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_balita_6_sampai_59_bulan_mendapat_kapsul_vitamin_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_ditimbang_naik_berat_badannya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Balita 6-59 bulan Mendapat Kapsul Vitamin A"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_balita_6_sampai_59_bulan_mendapat_kapsul_vitamin_a"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_balita_6_sampai_59_bulan_mendapat_kapsul_vitamin_a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_rumah_tangga_mengonsumsi_garam_beriodium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_balita_6_sampai_59_bulan_mendapat_kapsul_vitamin_a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Rumah Tangga Mengonsumsi Garam Beriodium"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_rumah_tangga_mengonsumsi_garam_beriodium"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_rumah_tangga_mengonsumsi_garam_beriodium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <TextView
+        android:id="@+id/tv_subtitle_kasus_balita_gizi_buruk_yang_mendapat_perawatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_rumah_tangga_mengonsumsi_garam_beriodium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cakupan Kasus Balita Gizi Buruk yang Mendapat Perawatan"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_kasus_balita_gizi_buruk_yang_mendapat_perawatan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_kasus_balita_gizi_buruk_yang_mendapat_perawatan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Masukkan disini"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_olah_data"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/et_kasus_balita_gizi_buruk_yang_mendapat_perawatan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="Olah Data"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="25dp"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

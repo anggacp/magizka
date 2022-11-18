@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#DDEEDF"
+    android:paddingBottom="50dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+    <CalendarView
+        android:id="@+id/calender_event"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_aksi1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/calender_event"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="JANUARI"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aksi1"
+        app:layout_constraintTop_toBottomOf="@id/txt_aksi1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Aksi - 1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/calender_event"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="FEBRUARI"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aksi2"
+        app:layout_constraintTop_toBottomOf="@id/txt_aksi2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Aksi - 2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksi1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="MARET"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aksi3"
+        app:layout_constraintTop_toBottomOf="@id/txt_aksi3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Aksi - 3"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksi2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="APRIL"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aksi4"
+        app:layout_constraintTop_toBottomOf="@id/txt_aksi4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Aksi - 4"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksi3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="MEI"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_aksi5"
+    app:layout_constraintTop_toBottomOf="@id/txt_aksi5"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="5dp"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="Aksi - 5"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:backgroundTint="#388E3C"
+    app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksi4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="APRIL - DESEMBER"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aksi6"
+        app:layout_constraintTop_toBottomOf="@id/txt_aksi6"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Aksi - 6"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksi5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="SEPTEMBER"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_aksi7"
+    app:layout_constraintTop_toBottomOf="@id/txt_aksi7"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="5dp"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="Aksi - 7"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:backgroundTint="#388E3C"
+    app:cornerRadius="15dp"/>
+
+    <TextView
+        android:id="@+id/txt_aksi8"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aksi6"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="DESEMBER"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aksi8"
+        app:layout_constraintTop_toBottomOf="@id/txt_aksi8"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Aksi - 8"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#388E3C"
+        app:cornerRadius="15dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
